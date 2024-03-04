@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!-- User Stories:
+
+You can see at least three clickable elements inside the nav element, each with the class nav-link
+
+When you click a .nav-link button in the nav element, you are taken to the corresponding section of the landing page
+
+When you click the #submit element, the email is submitted to a static page (use this mock URL: https://www.freecodecamp.com/email-submit)
+
+The navbar should always be at the top of the viewport
+Your product landing page should have at least one media query
+Your product landing page should utilize CSS flexbox at least once -->
+
+<html lang="pt-br">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>Pacotes</title>
+  </head>
+  <body>
+    <header id="header">
+        <img id="header-img" src="/imagens/logo2.jpg" alt="logo">
+        <h1>japassei.com</h1>
+        <nav id="nav-bar">
+            <ul>
+                <li><a class="nav-link">Recursos</a></li>
+                <li><a href="#video" class="nav-link">Qual a importância?</a></li>
+                <li><a class="nav-link">Preços</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form method="post" action="https://www.freecodecamp.com/email-submit" id="form">
+            <h2 id="requisicao">Registre-se para receber nossos dados e atualizações!</h2>
+            <input id="email" type="email" placeholder="Digite seu melhor email!">
+            <input id="submit" type="submit">
+        </form>
+        <section id="video">
+          <iframe id="video"width="560" height="315" src="https://www.youtube.com/embed/HDScZ3dUH4g?si=YH2czqwql46dUo7f" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </section>
+    </main>
+  </body>
+</html>
